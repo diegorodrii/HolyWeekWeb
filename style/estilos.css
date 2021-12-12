@@ -1,0 +1,498 @@
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body  {
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 90px 20px 0;
+}
+
+@font-face {
+    font-family: titulo;
+    src: url("../fuentes/Romanesco-Regular.ttf");
+}
+
+@font-face {
+    font-family: texto;
+    src: url("../fuentes/Lora-Italic-VariableFont_wght.ttf");
+}
+
+.titulo {
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.hero {
+    padding: 14rem;
+    align-items: center;
+    height: 600px;
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: url(https://www.caminosdepasion.com/wp-content/uploads/cache/images/SSPGEN3/SSPGEN3-540631668.jpg);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    
+}
+
+#hero {
+    display: block;
+}
+
+a:link {
+text-decoration: none;
+color: #225420;
+}
+
+
+a:visited {
+text-decoration: none;
+color: #3a6d26;
+    }
+
+
+a:hover {
+text-decoration: none;
+color: #408A9F;
+}
+
+
+
+ a:active {
+ text-decoration: none;
+ }
+
+
+
+.header {
+    background-color: #07e95e;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px; /* Breakpoint para responsive estudiado por Bootstrap*/
+    margin: 0 auto;
+}
+
+.nav-link {
+    color:white;
+    text-decoration: none;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 50px;
+    line-height: 80px;
+    text-decoration: none;
+
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+   
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link:hover, .nav-menu-link_active {
+    background-color: #03742e;
+    transition: 0.7s;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-toggle {
+    color: white;
+    background: none;
+    border:none;
+    font-size: 30px;
+    padding:0 20px;
+    line-height: 60px;
+    display: none;/* no se ve en pc */
+    
+
+
+}
+
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    border-radius: 50px;
+}
+
+.hero, .nav {
+    font-family: texto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 884px){/* cuando dipositivo < 850px se aplica estos estilos */
+    
+    .izquierda{
+        width: 100%;
+    }
+
+    #calvario {
+        width: 100%;
+        
+    }
+    body  {
+        padding-top: 70px ;
+    }
+    
+    .header {
+        height: 60px;
+    }
+
+    .hero {
+        background-repeat: no-repeat;
+    }
+ 
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+        display: block;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        margin: 0;
+        background-color: #85b651;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto ;
+
+       left: 100%;
+       transition: left 0.3s;
+    }
+    
+    .nav-menu-item {
+ 
+        line-height: 70px;
+    
+    }
+  
+    .nav-menu-link:hover, .nav-menu-link_active {
+        background: none;
+        color: rgb(0, 255, 34);
+    }
+    
+    
+    .nav-menu-link {
+        padding: 8px 12px;
+        border-radius: 3px;
+    }
+    
+    .nav-toggle {
+        display: block;
+    
+    }
+
+    .nav-menu_visible {
+        left: 0;
+
+    }
+
+    .nav-toggle:focus:not(:focus-visible){ /* cuando estamos en dispositivo movil no se ve resaltado la hamburguesa*/
+        outline: none;
+    }
+    
+    #mitad {
+        width: 100%;
+    }
+
+}
+
+/*** CortaFloat   */
+
+.cortafloat {
+    clear: both;
+}
+
+
+/*** Introducción */
+
+
+
+#introduction {color:black;
+    font-family:texto;
+    padding:4% 8% 5% ;
+    
+    border-bottom:3px solid rgb(77, 134, 80);}
+
+#introduction h1 {font-family:titulo;
+       text-align:center;
+       font-size: 2.5rem;
+       padding-bottom: 20px;
+    }
+    
+#introduction p {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 30px;
+    
+}
+
+#introduction p:first-letter {font-size:1.5em;
+    color:rgb(90, 134, 77);}
+
+#fotocalvario {
+    width: 50%;
+    float: left;
+    margin: 0px 10px 10px 0px;
+    padding-right: 50px;
+}
+
+/*** Historia*/
+
+#history {
+    font-family: texto;
+    color: black;
+    font-size: 1.25em;
+    
+    padding:4% 10% 0% ;
+    
+}
+#history h1 {font-family:titulo;
+    text-align:center;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+ }
+#izquierda {
+    padding: 4%;
+    text-align: justify;
+    width: 50%;
+    
+}
+#izquierda h1 {font-family: titulo;
+    text-align: center;
+    font-size:2.5em;}
+
+
+#izquierda p:first-letter {font-size:1.5em;
+    color:rgb(90, 134, 77);}
+
+#derecha {
+    margin-top: 40px;
+    width: 50%;
+    
+}
+.romanos {
+    
+    display: block;
+    margin: auto;
+}
+
+#mitad {width:50%;
+    float:left;
+    box-sizing: border-box;}
+    
+    #romanos {
+        width:75%;  /***** es el 50% de su columna, de su mitad ***/
+        display:block; /***** para que se comporte como un bloque **/
+        margin:auto;   /**** y se deje centrar ****/
+ }
+
+ /** Galería*/
+ 
+ #gallery h1 {
+     font-family: titulo;
+    color:black;
+    font-size:2.5em;
+    text-align:center;
+    padding-top: 40px;
+    padding-bottom: 4%;
+}
+
+.imagen {
+    width:25%;
+    float:left;
+    padding:2%;
+    box-sizing:border-box;
+    border: 1px solid rgb(77, 134, 80);
+   
+    
+}
+
+.imagen img{
+    width:100%;
+}
+
+.imagen h2{
+    font-family:titulo;
+   text-align:center;
+   color:rgb(0, 0, 0);
+
+}
+
+@media only screen and (max-width:884px){
+    .imagen, .video {width:100%;}
+    #introduction p, p {text-align:left;}
+}
+
+/** Multimedia*/
+
+#multimedia h1 {
+    padding-top: 30rem;
+    font-family: titulo;
+    color:black;
+    font-size:3em;
+    text-align:center;
+    
+    padding-bottom: 4%;
+    
+    
+}
+
+
+.video {
+    width:25%;
+    float:left;
+    padding:2%;
+    box-sizing:border-box;
+    border: 1px solid rgb(77, 134, 80);
+    
+}
+
+iframe {
+    width:100%;
+}
+
+.video h2 {
+    font-family:titulo;
+   text-align:center;
+   color:rgb(0, 0, 0);
+
+}
+@media only screen and (max-width:884px){
+    .video {width:100%;}
+   
+}
+
+
+/** About Me*/
+
+#aboutme h1 {
+    padding-top: 30rem;
+    font-family: titulo;
+    color:black;
+    font-size:3em;
+    text-align:center;
+    padding-bottom: 4%;
+}
+
+.descripcion {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 30px;
+    width: 50%;
+}
+
+#history {
+    font-family: texto;
+    color: black;
+    font-size: 1.25em;
+    
+    padding:4% 10% 0% ;
+    
+}
+#aboutme h1 {font-family:titulo;
+    text-align:center;
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+ }
+
+#soyyo{
+    max-width: 400px ;
+}
+
+/** Footer*/
+
+footer{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    background-color: #225420;
+}
+
+footer p{
+    text-align: center;
+}
+
+.fa-twitter{
+    padding-left: 30px;
+    text-align: center;
+    color: #18ce5e;
+    font-size: 3em!important;
+}
+.fa-github{
+    padding-left: 30px;
+    text-align: center;
+    color: #18ce5e;
+    font-size: 3em!important;
+}
+.fa-instagram{
+    padding-left: 30px;
+    text-align: center;
+    color: #18ce5e;
+    font-size: 3em!important;
+}
+
+a{
+    color: #18ce5e;
+    text-decoration: none;
+}
+.espaciado{
+    padding-bottom: 2%;
+    text-align: center;
+}
